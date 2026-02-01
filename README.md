@@ -57,7 +57,7 @@
 graph LR;
   A[untracked] -- "git add" --> B[staged];
   B -- "git commit" --> C[tracked];
-  C -- "Изменения" --> D[modified];
+  B -- "Изменения" --> D[modified];
   D -- "git add" --> B;
   C -- "Изменения" --> D;
 ```
